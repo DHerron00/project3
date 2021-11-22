@@ -1,0 +1,393 @@
+$cwhite: global #e0e0e0;
+$corange: global #fa6a02;
+$cgray: global #272727;
+
+/*------ CSS OBJECTS ------*/
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  font-size: 32px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-top: 10px;
+  border: 3px solid black;
+  box-shadow: -3px 3px 2px black;
+  white-space: nowrap;
+  float: center;
+  text-align: center;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.item-l {
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item-s {
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  box-sizing: border-box;
+}
+
+.section-banner {
+  font-size: 48px;
+  text-align: center;
+}
+
+.page-masthead {
+  border-top: 8px solid $corange;
+  border-bottom: 8px solid $corange;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+/*-------- GLOBAL --------*/
+
+h1 {
+  font-family: "PT Sans Narrow";
+  color: $cgray;
+}
+
+h2 {
+  font-family: "PT Sans Narrow";
+  color: white;
+}
+
+h3, p {
+  font-family: "PT Sans Narrow";
+}
+
+a {
+  font-family: "PT Sans Narrow";
+  text-decoration: none;
+  color: $corange;
+}
+
+span {
+  font-family: "PT Sans Narrow";
+}
+
+li {
+  font-family: "PT Sans Narrow";
+  color: $cwhite;
+  list-style-type: circle;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*-------- HOME --------*/
+
+.header {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.himage {
+  max-width: 512px;
+  width: 90%;
+}
+
+.home-box {
+  background-color: $cgray;
+}
+
+.home-banner {
+  color: $cwhite;
+}
+
+.hb-ct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.obutton {
+  color: white;
+  background-color: $corange;
+}
+
+.gbutton {
+  background-color: $cwhite;
+  color: $cgray;
+  width: 325px;
+}
+
+.home-main {
+  background-color: $cwhite;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.home-content {
+  max-width: 784px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hc-left {
+  background-color: $cgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 300px;
+  box-sizing: border-box;
+  border-top: 50px solid $corange;
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-left: 20px;
+  height: 570px;
+}
+
+.nav-title {
+  text-align: center;
+  font-size: 26px;
+  margin-top: -52px;
+}
+
+.nav-cat {
+  font-size: 24px;
+}
+
+.nav-link {
+  font-size: 20px;
+  margin-left: 25px;
+
+  &:hover {
+    color: #ffdfc7;
+  }
+}
+
+.category {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid $corange;
+  padding-bottom: 10px;
+}
+
+.hc-right {
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.block-title {
+  color: $corange;
+  font-size: 32px;
+}
+
+.tt-block {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding-top: 4px;
+  padding-bottom: 6px;
+  background-color: $corange;
+  text-align: center;
+  color: $cwhite;
+  font-weight: 600;
+}
+
+/*-------- SHOP --------*/
+
+.shop-box {
+  background-color: $cwhite;
+  text-align: center;
+
+  p {
+    color: $cgray;
+    max-width: 784px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.shop-banner {
+  color: $corange;
+}
+
+.shop-nav {
+  display: flex;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav {
+  background-color: $cgray;
+  border: 3px solid $cgray;
+  margin-top: 16px;
+}
+
+.nav-img {
+  width: 128px;
+  height: 128px;
+}
+
+.nav-text {
+  color: $cwhite;
+}
+
+.nav:hover {
+  border: 3px solid $corange;
+
+  .nav-text {
+    color: $corange;
+  }
+}
+
+.shop-main {
+  display: flex;
+  padding: 30px;
+  background-color: $cgray;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rocket {
+  background-color: $cwhite;
+
+  &:hover {
+    background-color: $corange;
+
+    .item-text {
+      color: $cwhite;
+    }
+  }
+}
+
+.item-text {
+  padding-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: $corange;
+}
+
+.item-img {
+  width: 256px;
+  height: 256px;
+  margin-bottom: 8px;
+}
+
+/*-------- PRODUCT --------*/
+
+.product-box {
+  background-color: $cgray;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-img-container {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 470px;
+}
+
+.product-img {
+  max-width: 470px;
+  background-color: $cwhite;
+  padding: 10px;
+  border: 4px solid $corange;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.product-info {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.product-title {
+  font-size: 36px;
+  color: $corange;
+}
+
+.product-section {
+  font-size: 24px;
+  color: $corange;
+  margin-left: -20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.p-list {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.buy {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.price {
+  color: $cwhite;
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-right: 16px;
+}
+
+.product-main {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+
+.fourohfour {
+  color: $cwhite;
+}
+
+.back {
+  font-size: 24px;
+}
+
+.dumb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
